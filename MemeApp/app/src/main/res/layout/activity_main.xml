@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/MemeImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/shareButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:layout_width="0dp"
+        android:id="@+id/shareButton"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:onClick="shareMeme"
+        app:layout_constraintRight_toRightOf="@id/guideLine" />
+
+    <Button
+        android:layout_width="0dp"
+        android:onClick="nextMeme"
+        android:id="@+id/nextButton"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintLeft_toLeftOf="@id/guideLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/MemeImage"
+        app:layout_constraintLeft_toLeftOf="@id/MemeImage"
+        app:layout_constraintRight_toRightOf="@id/MemeImage"
+        android:id="@+id/progressBar"
+        app:layout_constraintBottom_toBottomOf="@id/MemeImage"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:id="@+id/guideLine"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

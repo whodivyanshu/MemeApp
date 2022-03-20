@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youTubePlayerView"
+            android:layout_width="385dp"
+            android:layout_height="237dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032"
+            app:videoId="OEF9NvkwoI0" />
+
+        <TextView
+            android:id="@+id/disease_name"
+            android:layout_width="381dp"
+            android:layout_height="51dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Brown Rust (भूरा रतुआ)"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.566"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/youTubePlayerView"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="367dp"
+            android:layout_height="184dp"
+            android:text="भूरा रतुआ लक्षण: सबसे पहले निचली पत्तियों पर नारंगी से लेकर भूरे रंग के गोल फफोले बन जाते हैं जोकि पत्तियों की उपरी व निचली सतह पर बिखरे दिखाई देते हैं. जैसे-जैसे बीमारी का प्रकोप बढ़ता है इसके लक्षण पौधों की ऊपरी पत्तियों व तनों पर भी दिखाई देते हैं."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.386"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/disease_name"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="354dp"
+            android:layout_height="55dp"
+            android:text="उपचार --"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.354"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.108" />
+
+        <TextView
+            android:layout_width="363dp"
+            android:layout_height="204dp"
+            android:text="क्षेत्र के लिए अनुमोदित नवीनतम रतुआ सहिष्णु प्रजातियाँ ही उगायें. एक किस्म को अधिक क्षेत्र में ना लगाएं. खेतों का निरीक्षण करें तथा पौधों के आस-पास उगायी गयी फसल पर अधिक ध्यान दें. रोग के लक्षण दिखाई देते ही प्रोपीकोनाजोल 25 ई.सी. (टिल्ट) या टेब्यूकोनाजोल 25 ई.सी. का 0.1 प्रतिशत घोल बनाकर छिड़काव करें. रोग के प्रकोप तथा फैलाव को देखते हुए दूसरा छिड़काव 10-15 दिन के अंतर पर करें."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

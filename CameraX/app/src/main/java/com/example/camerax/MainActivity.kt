@@ -15,7 +15,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.example.camerax.ml.Model
+
 import org.jetbrains.annotations.Nullable
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val Btn1: Button = findViewById(R.id.btn1)
         val Btn2: Button = findViewById(R.id.btn2)
+        val Btn3: Button = findViewById(R.id.btn3)
          var our_request_code: Int = 123
 
 
@@ -60,6 +61,12 @@ class MainActivity : AppCompatActivity() {
                 Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
             startActivityForResult(cameraIntent, our_gallery_code)
         })
+
+        Btn3.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
+        })
+
 
 
 
